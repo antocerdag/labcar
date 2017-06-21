@@ -7,3 +7,16 @@
 .text-uppercase{
 	text-transform: uppercase;
 }
+
+::-webkit-input-placeholder { 
+	color: white;
+} /* WebKit */
+:-moz-placeholder { 
+	color: white; 
+} /* Firefox 18- */
+::-moz-placeholder { 
+	color: white;
+} /* Firefox 19+ */
+:-ms-input-placeholder { 
+	color: white;
+} /* IE 10+ */

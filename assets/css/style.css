@@ -185,14 +185,14 @@
 /* TARIFAS */
 .tarifas{
 	background-color: #f7b617;
+    height: 500px;
 }
 
 .caja-tarifa{
-    position: relative;
-    left: -40px;
     color: white;
-    width: 300px;
+    width: 400px;
     height: 300px;
+
 }
 
 .caja-tarifa h3{
@@ -208,13 +208,38 @@
 }
 
 .caja-tarifa span{
+	margin-right: 12px;
 	font-size: 23px;
     color: rgba(255, 255, 255, 0.62);
 }
 
 .caja-tarifa input{
-	width: 210px;
+    width: 292px;
     height: 40px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.caja-tarifa button{
+    margin-left: 21%;
+    width: 160px;
+    margin-top: 28px;
+    border-radius: 6px;
+    border: none;
+}
+
+.caja-mapa{
+    border: 2px solid white;
+    width: 435px;
+    height: 430px;
+    margin-left: 20%;
+    margin-top: 47px;
+}
+
+#map{
+    width: 400px;
+    height: 400px;
+    margin-top: 12px;
 }
