@@ -23,11 +23,11 @@
 }
 
 .caja-amarilla{
-	background-color: #f7b617;
-    width: 102%;
-    height: 382px;
+    background-color: #f7b617;
+    width: 89%;
     position: relative;
-	top: 100px;
+    top: 100px;
+    left: 15px;
 }
 .cabecera-caja {
 	width: 92%;
@@ -60,15 +60,13 @@
 
 .caja-registrate{
 	width: 86%;
-    position: relative;
-    left: 9%;
 }
 
 .caja-registrate p{
 	position: relative;
     top: -31px;
-    left: 142px;
     font-size: 15px;
+	margin-left: 43%;
 }
 
 .caja-registrate button{
@@ -80,11 +78,12 @@
     font-weight: 700;
     border-radius: 7px;
     box-shadow: none;
+	margin-left: 10%;
 }
 
 .linea1{
 	width: 132px;
-    position: relative;
+    margin-left: 10%;
 }
 
 .linea2{
