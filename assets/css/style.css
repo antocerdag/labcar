@@ -27,7 +27,6 @@
     width: 102%;
     height: 382px;
     position: relative;
-    left: 118%;
 	top: 100px;
 }
 .cabecera-caja {
@@ -260,6 +259,11 @@ footer{
     color: white;
     font-size: 20px;
 }
+
+.redes-sociales i:hover{
+	color:  #f7b617;
+	cursor: pointer;
+}
 .links ul li{
     list-style-type: none;
     margin-top: 20px;
@@ -268,4 +272,23 @@ footer{
 .links a{
 	color: white;
     text-decoration: none;
+}
+
+.links a:hover{
+	color:  #f7b617;
+	cursor: pointer;
+}
+.img-store{
+	margin-top: 182px;
+}
+.img-store img{
+	margin-top: 14px;
+}
+.img-store img:hover{
+	cursor: pointer;
+}
+.txt-footer {
+	color: white;
+	font-weight: 100;
+	margin-bottom: 60px;
 }
