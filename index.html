@@ -45,8 +45,43 @@
 	              <p class="text-uppercase">Regístrate</p>
 	              <div class="caja-registrate">
 	              	<hr class="linea1"> <p>O bien</p> <hr class="linea2">
-	              	<button type="button" class="btn btn-default" aria-haspopup="true" aria-expanded="false">Conviértete en un conductor</button>
+	              	<button type="button" class="btn btn-default"  data-toggle="modal" data-target="#modal-conductor" d aria-haspopup="true" aria-expanded="false" >Conviértete en un conductor</button>
 	              </div>
+	              <!-- Modal -->
+					<div class="modal fade" id="modal-conductor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title text-center" id="exampleModalLabel">Conviértete en conductor</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <label for="name">Nombre</label>
+					        <br>
+					        <input type="text" placeholder="Ingresa tu nombre">
+					        <br>
+					        <label for="apellido">Apellido</label>
+					        <br>
+					        <input type="text" placeholder="Ingresa tu apellido">
+					        <br>
+					        <label for="correo">Correo</label>
+					        <br>
+					        <input type="email" placeholder="Ingresa tu correo">
+					        <br>
+					        <label for="telefono">Teléfono</label>
+					        <br>
+					        <input type="number" placeholder="Ingresa tu teléfono">
+					        <br><br>
+					        <button type="button" class="btn btn-warning">Enviar</button>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	        	</div>
 	        </div>
 	    </div>
@@ -77,7 +112,7 @@
 				<div class="col-md-4 col-xs-12 pull-right caja-conduce">
 					<h3>Conduce cuando quieras</h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-					<button type="button" class="btn btn-default" d aria-haspopup="true" aria-expanded="false">Conviértete en conductor</button>
+					<button type="button" class="btn btn-default"  data-toggle="modal" data-target="#modal-conductor" d aria-haspopup="true" aria-expanded="false">Conviértete en conductor</button>
 				</div>
 			</div>
 		</div>

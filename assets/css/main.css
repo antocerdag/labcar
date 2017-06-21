@@ -20,3 +20,14 @@
 :-ms-input-placeholder { 
 	color: white;
 } /* IE 10+ */
+.modal-body{
+	margin-left: 20%;
+}
+.modal-body input{
+    width: 292px;
+    height: 40px;
+    border: 1px solid #f7b617;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f7b617;
+}
