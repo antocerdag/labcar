@@ -62,4 +62,42 @@ function initMap(){
         });
  }
 
+/* VALIDACIÓN MODAL */ 
 
+var boton = document.getElementById("btn-enviar").addEventListener("click", function(){
+	
+	
+	
+	
+		function name(){
+			var name = document.getElementById("name").value;
+			if(name === ""){
+				alert("Please enter your name");
+			}
+		}
+		name();
+		function apellido(){
+			var apellido = document.getElementById("apellido").value;
+			if(apellido === ""){
+				alert("Please enter your lastname");
+			}
+		}
+		apellido();
+
+		function email(){
+			var correo = document.getElementById("correo").value;
+			if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo)) ) {
+			  alert("Please enter a valid email");
+			}
+
+		}
+		email();
+		function phone(){
+			var phone = document.getElementById("tel").value;
+			
+			if( !(/^\d{9}$/.test(phone)) ) { //Validación para ingresar 9 numeros
+	 			alert("Please enter a valid phone number");
+			}
+		}
+		phone();
+})

@@ -26,12 +26,16 @@
     background-color: #f7b617;
     width: 89%;
     position: relative;
-    top: 100px;
+    margin-top: 80px;
     left: 15px;
 }
 .cabecera-caja {
 	width: 92%;
-    height: 80px;
+}
+
+.img-escondida{
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 .cabecera-caja h3{
 	margin-left: 9%;
@@ -48,7 +52,9 @@
 }
 
 .caja-amarilla h4 img{
-	margin-top: -7px;
+    margin-top: -31px;
+    margin-left: 29%;
+
 }
 .caja-amarilla p{
 	color: white;
@@ -97,12 +103,12 @@
 
 .second-section{
 	background-color: #f7b617;
+	width: 100%;
 }
 
 .caja-celu{
     width: 80%;
     height: 530px;
-    
 }
 .caja-borde{
     border: 1px solid white;
@@ -110,13 +116,24 @@
     left: -88px;
     top: 30px;
     width: 942px;
-    height: 456px;
+    height: 476px;
 }
-.caja-borde img{
+.cel-grande{
     margin-top: 50px;
     margin-bottom: 45px;
     margin-left: 7%;
     width: 76%;
+}
+.cel-pequenio{
+    width: 33%;
+    margin-left: 7%;
+    margin-top: 18px;
+}
+.txt-escondido{
+    color: white;
+    margin-left: 12%;
+    font-size: 43px;
+    font-weight: 200;
 }
 .caja-descarga{
     position: relative;
@@ -146,10 +163,7 @@
 }
 
 .caja-conduce{
-    width: 40%;
     height: 400px;
-    position: relative;
-    right: -55px;
     background-color: rgba(11, 3, 16,0.4);
     color: white;
 }
@@ -189,8 +203,7 @@
 .caja-tarifa{
     color: white;
     width: 400px;
-    height: 300px;
-
+    height: 444px;
 }
 
 .caja-tarifa h3{
