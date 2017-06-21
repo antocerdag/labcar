@@ -243,3 +243,29 @@
     height: 400px;
     margin-top: 12px;
 }
+
+/* FOOTER */
+
+footer{
+	background-color: #2B2B2B;
+}
+
+.caja-logo-footer{
+	margin-top: 80px;
+
+}
+.redes-sociales{
+	margin-top: 300px;
+    margin-left: 6%;
+    color: white;
+    font-size: 20px;
+}
+.links ul li{
+    list-style-type: none;
+    margin-top: 20px;
+    font-weight: 100;
+}
+.links a{
+	color: white;
+    text-decoration: none;
+}
