@@ -94,3 +94,46 @@
     top: -63px;
     left: 60%;
 }
+
+/* SECOND SECTION */
+
+.second-section{
+	background-color: #f7b617;
+}
+
+.caja-celu{
+    width: 80%;
+    height: 530px;
+    
+}
+.caja-borde{
+    border: 1px solid white;
+    position: relative;
+    left: -88px;
+    top: 30px;
+    width: 942px;
+    height: 456px;
+}
+.caja-borde img{
+    margin-top: 50px;
+    margin-bottom: 45px;
+    margin-left: 7%;
+    width: 76%;
+}
+.caja-descarga{
+    position: relative;
+    top: 84px;
+    width: 450px;
+    height: 300px;
+	color: white;
+}
+.caja-descarga h3{
+	font-size: 36px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.caja-descarga p{
+	font-size: 19px;
+    font-weight: 100
+}
