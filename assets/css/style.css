@@ -9,3 +9,88 @@
     color: black;
     font-weight: 400;
 }
+
+.navbar-background{
+	background-image: url(../img/taxi.jpg);
+	background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+	height: 848px;
+}
+
+.navbar{
+	background-color: white;
+}
+
+.caja-amarilla{
+	background-color: #f7b617;
+    width: 102%;
+    height: 382px;
+    position: relative;
+    left: 118%;
+	top: 100px;
+}
+.cabecera-caja {
+	width: 92%;
+    height: 80px;
+}
+.cabecera-caja h3{
+	margin-left: 9%;
+	margin-top: 50px;
+    font-size: 35px;
+    color: white;
+}
+.caja-amarilla h4{
+	margin-left: 9%;
+    color: white;
+    font-size: 29px;
+    margin-top: 31px;
+    font-weight: 300;
+}
+
+.caja-amarilla h4 img{
+	margin-top: -7px;
+}
+.caja-amarilla p{
+	color: white;
+    margin-left: 9%;
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 21px;
+}
+
+.caja-registrate{
+	width: 86%;
+    position: relative;
+    left: 9%;
+}
+
+.caja-registrate p{
+	position: relative;
+    top: -31px;
+    left: 142px;
+    font-size: 15px;
+}
+
+.caja-registrate button{
+    position: relative;
+    top: -40px;
+    width: 260px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 7px;
+    box-shadow: none;
+}
+
+.linea1{
+	width: 132px;
+    position: relative;
+}
+
+.linea2{
+    width: 132px;
+    position: relative;
+    top: -63px;
+    left: 60%;
+}
