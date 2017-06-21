@@ -137,3 +137,47 @@
 	font-size: 19px;
     font-weight: 100
 }
+
+/* THIRD SECTION */
+
+.third-section{
+	background-image: url(../img/conduce.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caja-conduce{
+    width: 40%;
+    height: 400px;
+    position: relative;
+    right: -55px;
+    background-color: rgba(11, 3, 16,0.4);
+    color: white;
+}
+
+.caja-conduce h3{
+	font-size: 34px;
+    margin-top: 80px;
+    margin-left: 3%;
+}
+
+.caja-conduce p{
+	font-size: 20px;
+    font-weight: 200;
+    width: 355px;
+    margin-left: 3%;
+    margin-top: 23px;
+}
+
+.caja-conduce button{
+    border: none;
+    background-color: #f7b617;
+    margin-left: 3%;
+    margin-top: 20px;
+    width: 235px;
+    height: 44px;
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+}
