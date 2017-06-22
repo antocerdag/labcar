@@ -34,7 +34,7 @@ function initMap(){
 	}
 	//Librería gmps. 
 	//Para el auto completado de la dirección
-	  var inputOrigen =(document.getElementById("origen"));    
+	  var inputOrigen = (document.getElementById("origen"));    
 	  var autocompleteOrigen = new google.maps.places.Autocomplete(inputOrigen);
 	  autocompleteOrigen.bindTo('bounds', map);
 	
@@ -47,30 +47,7 @@ function initMap(){
 		directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true}); 
 		directionsDisplay.setMap(map);
 
-    var onChangeHandler = function() {
-          calculateAndDisplayRoute(directionsService, directionsDisplay);
-           costooruta();
-        };
-        document.getElementById("ruta").addEventListener("click",onChangeHandler);
-        document.getElementById("origen").addEventListener('change', onChangeHandler);
-        document.getElementById("destino").addEventListener('change', onChangeHandler);
-    }
-
-      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        directionsService.route({
-          origin: document.getElementById("origen").value,
-          destination: document.getElementById("destino").value,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-          	document.getElementById("ruta").addEventListener("click", function(){
-          		directionsDisplay.setDirections(response);
-          	})
-            
-          } 
-        });
-
-       function costooruta() {
+		function costooruta() {
             var start = document.getElementById("origen").value;
             var end = document.getElementById("destino").value;
             var distanceInput = document.getElementById("display-costo");
@@ -93,6 +70,31 @@ function initMap(){
                 }
             });
     	}
+
+    var onChangeHandler = function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+           costooruta();
+    };
+        document.getElementById("ruta").addEventListener("click",onChangeHandler);
+        document.getElementById("origen").addEventListener('change', onChangeHandler);
+        document.getElementById("destino").addEventListener('change', onChangeHandler);
+    }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: document.getElementById("origen").value,
+          destination: document.getElementById("destino").value,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+          	document.getElementById("ruta").addEventListener("click", function(){
+          		directionsDisplay.setDirections(response);
+          	})
+            
+          } 
+        });
+
+       
 			        
 			
 }
