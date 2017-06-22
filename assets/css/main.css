@@ -32,3 +32,27 @@
     background-color: transparent;
     color: #f7b617;
 }
+
+.redes-sociales-oculto{
+    margin-top: 20px;
+	color: white;
+    font-size: 20px;
+
+}
+.redes-sociales-oculto i:hover{
+	color:  #f7b617;
+	cursor: pointer;
+}
+.img-store-oculto{
+	margin-top: 12px;
+}
+.img-store-oculto img{
+	margin-top: 14px;
+}
+.img-store-oculto img:hover{
+	cursor: pointer;
+}
+
+.nav-header.icon-bar .hamburguesa{
+	color: black;
+}

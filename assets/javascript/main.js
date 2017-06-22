@@ -1,7 +1,7 @@
 function initMap(){
 	var map = new google.maps.Map(document.getElementById("map"),{
 		zoom: 5,
-		center: {lat:-9.1191427, lng: -77.0349046},
+		center: {lat:-33.59938794981402, lng: -70.73228617031253},
 		mapTypeControl:false,
 		zoomControl:false,
 		streetViewControl:false,
@@ -107,4 +107,21 @@ var boton = document.getElementById("btn-enviar").addEventListener("click", func
 			}
 		}
 		phone();
+})
+
+var botonIniciar = document.getElementById("btn-ingresar").addEventListener("click", function(){
+	function username(){
+			var username = document.getElementById("usuario").value;
+			if(username === ""){
+				alert("Please enter your username");
+			}
+		}
+		username();
+	function password(){
+			var clave = document.getElementById("clave").value;
+			if(clave === ""){
+				alert("Please enter your password");
+			}
+		}
+		password();
 })

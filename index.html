@@ -21,7 +21,7 @@
 				<div class="navbar-header ">
 					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
+						<span class="icon-bar"><i class="fa fa-bars hamburguesa" aria-hidden="true"></i></span>
 					</button>
 					<img class="img-responsive logo" src="assets/img/logo.png" alt="logo">
 				</div>
@@ -29,7 +29,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#viaja">Viaja</a></li>
 						<li><a href="#conduce">Conduce</a></li>
-						<li><a href="#inicia">inicia sesión</a></li>
+						<li><a href="#inicia" data-toggle="modal" data-target="#modal-inicia">Inicia sesión</a></li>
 					</ul>
 				</div>
 			</div>
@@ -49,12 +49,12 @@
 	              	<hr class="linea1 hidden-xs"> <p class="hidden-xs">O bien</p> <hr class="linea2 hidden-xs">
 	              	<button type="button" class="btn btn-default hidden-xs"  data-toggle="modal" data-target="#modal-conductor" d aria-haspopup="true" aria-expanded="false" >Conviértete en un conductor</button>
 	              </div>
-	              <!-- Modal -->
-					<div class="modal fade" id="modal-conductor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	              <!-- Modal CONDUCTOR -->
+					<div class="modal fade" id="modal-conductor" tabindex="-1" role="dialog" aria-labelledby="modal-conviertete" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title text-center" id="exampleModalLabel">Conviértete en conductor</h5>
+					        <h5 class="modal-title text-center" id="modal-conviertete">Conviértete en conductor</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
@@ -80,6 +80,33 @@
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- MODAL INICIO SESIÓN -->
+					<div class="modal fade" id="modal-inicia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Inicia Sesión</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <label for="usuario">Usuario</label>
+					        <br>
+					        <input type="text" id="usuario" placeholder="Ingresa tu usuario">
+					        <br>
+					        <label for="clave">Clave</label>
+					        <br>
+					        <input type="password" id="clave" placeholder="Ingresa tu clave">
+					        <br>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					        <button type="button" class="btn btn-primary" id="btn-ingresar">Ingresar</button>
 					      </div>
 					    </div>
 					  </div>
@@ -152,7 +179,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 hidden-xs">
 					<div class="redes-sociales">
 						<i class="fa fa-facebook-official" aria-hidden="true"></i>
 						<i class="fa fa-twitter-square" aria-hidden="true"></i>
@@ -161,7 +188,16 @@
 						<i class="fa fa-play" aria-hidden="true"></i>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="hidden-md col-xs-6 pull-right">
+					<div class="redes-sociales-oculto">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<i class="fa fa-apple" aria-hidden="true"></i>
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
 					<div class="links text-left">
 						<ul>
 							<li><a href="#">Viaja</a></li>
@@ -175,7 +211,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 hidden-xs">
 					<div class="links text-left">
 						<ul>
 							<li><a href="#">Oportunidades</a></li>
@@ -189,8 +225,14 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 hidden-xs">
 					<div class="img-store">
+						<img class="img-responsive" src="assets/img/app-store.png" alt="app-store">
+						<img class="img-responsive" src="assets/img/google-play.png" alt="google-play">
+					</div>
+				</div>
+				<div class="hidden-md col-xs-6 pull-right">
+					<div class="img-store-oculto">
 						<img class="img-responsive" src="assets/img/app-store.png" alt="app-store">
 						<img class="img-responsive" src="assets/img/google-play.png" alt="google-play">
 					</div>
@@ -208,6 +250,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="assets/javascript/main.js"></script>
 	<!--MAPA-->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2leKvSUBcNW3YrMmBC5aEGcuXhRhUK-M&libraries=places&callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyTuLoAaQ2qu3s2eUIQ0TEWg5tR8rFTfQ&libraries=places&callback=initMap"></script>
 </body>
 </html>
