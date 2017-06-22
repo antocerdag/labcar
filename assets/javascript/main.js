@@ -38,21 +38,23 @@ function initMap(){
 	  var autocompleteOrigen = new google.maps.places.Autocomplete(inputOrigen);
 	  autocompleteOrigen.bindTo('bounds', map);
 	
-	var inputDestino = document.getElementById("destino");
-	var autocompleteDestino = new google.maps.places.Autocomplete(inputDestino);
-	autocompleteDestino.bindTo('bounds', map);
+		var inputDestino = document.getElementById("destino");
+		var autocompleteDestino = new google.maps.places.Autocomplete(inputDestino);
+		autocompleteDestino.bindTo('bounds', map);
 
-	var directionsService = new google.maps.DirectionsService;
-	var directionsDisplay = new google.maps.DirectionsRenderer;
-	directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true}); 
-	directionsDisplay.setMap(map);
+		var directionsService = new google.maps.DirectionsService;
+		var directionsDisplay = new google.maps.DirectionsRenderer;
+		directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true}); 
+		directionsDisplay.setMap(map);
 
-        var onChangeHandler = function() {
+    var onChangeHandler = function() {
           calculateAndDisplayRoute(directionsService, directionsDisplay);
+           costooruta();
         };
+        document.getElementById("ruta").addEventListener("click",onChangeHandler);
         document.getElementById("origen").addEventListener('change', onChangeHandler);
         document.getElementById("destino").addEventListener('change', onChangeHandler);
-      }
+    }
 
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         directionsService.route({
@@ -67,7 +69,34 @@ function initMap(){
             
           } 
         });
- }
+
+       function costooruta() {
+            var start = document.getElementById("origen").value;
+            var end = document.getElementById("destino").value;
+            var distanceInput = document.getElementById("display-costo");
+            
+            var request = {
+                origin:start,
+                destination:end,
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+            };
+            
+            directionsService.route(request, function(response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);                    
+                    var valorRuta = (response.routes[0].legs[0].distance.value / 1000) * 300;
+                    var contenedor = document.createElement("div");
+                    contenedor.setAttribute("class","costos");
+                    var contenedorValor = document.createTextNode("$  " + valorRuta);
+                    contenedor.appendChild(contenedorValor);
+                    distanceInput.appendChild(contenedor);
+                }
+            });
+    	}
+			        
+			
+}
+
 
 /* VALIDACIÓN MODAL */ 
 
